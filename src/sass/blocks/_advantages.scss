@@ -1,0 +1,26 @@
+.advantages {
+    padding: 72px 0 79px 0;
+    background-color: #f6f6f6;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 65px;
+    }
+    &_item {
+        max-width: 277px;
+    }
+    &_subtitle {
+        margin-top: 38px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #0D0D0D;
+    }
+    &_descr {
+        margin-top: 27px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #0D0D0D;
+    }
+}
