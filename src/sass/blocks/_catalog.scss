@@ -35,11 +35,17 @@
 .catalog {
     margin-bottom: 102px;
     &__content {
-        display: flex;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_active {
+            display: flex;
+        }
     }
         .catalog-item {
             width: 302px;
             min-height: 442px;
+            margin-bottom: 18px;
             border: 2px solid #E8E8E8;
             padding: 21px 20px;
             padding-bottom: 27px;
@@ -135,6 +141,10 @@
             }
         }
             &__back {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(calc(-50% - 19px));
                 font-size: 14px;
                 line-height: 16px;
                 text-decoration-line: underline;
