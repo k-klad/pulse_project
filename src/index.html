@@ -23,7 +23,7 @@
 				</div>
 				<div class="header__phone">
 					<a href="tel:+74999228974">+7 (499) 922-89-74</a>
-					<button class="button">заказать звонок</button>
+					<button data-modal="consultation" class="button">заказать звонок</button>
 				</div>
 			</header>
 			<div class="promo__wrapper">
@@ -42,7 +42,7 @@
 					Ответим на все вопросы
 				</div>
 			</div>
-			<button class="button button__main">заказать консультацию</button>
+			<button data-modal="consultation" class="button button__main">заказать консультацию</button>
 			<div class="promo_link">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
 			</div>
 		</div>
@@ -142,7 +142,7 @@
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 								<img src="image/catalog_clock.jpg" alt="clock">
-							<div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+							<div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 						</div>
@@ -196,7 +196,7 @@
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 								<img src="image/catalog_clock.jpg" alt="clock">
-							<div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+							<div class="catalog-item__subtitle">Пульсометр Polar FT4</div>
 							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
 							<a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
 						</div>
@@ -441,6 +441,35 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195992!2d37.644807315931104!3d55.76839498055754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1583332706346!5m2!1sru!2sru" width="100^" height="630" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 		</div>
 	</footer>
+	<div class="overlay">
+		<div class="modal-wind" id="consultation">
+			<div class="modal-wind__close">&#10006;</div>
+			<div class="modal-wind__subtitle">Просто заполните форму заявки</div>
+			<div class="modal-wind__description">и мы перезвоним вам в течении 10 минут</div>
+			<form class="feed-form" action="#">
+				<input requared placeholder="Ваше имя" type="text">
+				<input requared placeholder="Ваш телефон" type="tel">
+				<input requared placeholder="Ваш E-mail" type="email">
+				<button class="button button_modal">заказать консультацию</button>
+			</form>
+		</div>
+		<div class="modal-wind" id="order">
+			<div class="modal-wind__close">&#10006;</div>
+			<div class="modal-wind__subtitle">Ваш заказ:</div>
+			<div class="modal-wind__description">Пульсометр Polar FT1</div>
+			<form class="feed-form" action="#">
+				<input requared placeholder="Ваше имя" type="text">
+				<input requared placeholder="Ваш телефон" type="tel">
+				<input requared placeholder="Ваш E-mail" type="email">
+				<button class="button button_modal">Купить</button>
+			</form>
+		</div>
+		<div class="modal-wind modal-wind__thanks" id="thanks">
+			<div class="modal-wind__close">&#10006;</div>
+			<div class="modal-wind__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal-wind__description">Наш менеджер свяжется с вами в ближайшее время!</div>
+		</div>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>

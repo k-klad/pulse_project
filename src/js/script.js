@@ -28,3 +28,18 @@ function toggleSlide (item) {
 
 toggleSlide('.catalog-item__link');
 toggleSlide('.catalog-item__back');
+
+$('[data-modal=consultation]').on('click', function() {
+  $('.overlay, #consultation').fadeIn('slow');
+});
+$('.modal-wind__close').on('click', function() {
+  $('.overlay, #consultation, #order, #thanks').fadeOut('slow')
+});
+$('.button_catalog').on('click', function() {
+  $('.overlay, #order').fadeIn('slow');
+});
+$('.button_catalog').each(function(i) {
+  $(this).on('click', function() {
+    $('#order .modal-wind__description').text($('.catalog-item__subtitle').eq(i).text());
+  })
+});
