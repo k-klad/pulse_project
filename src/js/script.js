@@ -43,3 +43,35 @@ $('.button_catalog').each(function(i) {
     $('#order .modal-wind__description').text($('.catalog-item__subtitle').eq(i).text());
   })
 });
+
+function validateForms(form){
+  $(form).validate({
+  rules: {
+    name: {
+      required: true,
+      minlength: 2
+    },
+    phone: "required",
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    name: {
+      required: "Пожалуйста, введите своё имя",
+      minlength: jQuery.validator.format("Введите {0} символа.")
+    },
+    phone: "Пожалуйста, введите свой номер телефона",
+    email: {
+      required: "Пожалуйста, введите свой e-mail",
+      email: "Неправильно введён e-mail"
+    }
+  }
+});
+}
+validateForms('#consultation-form');
+validateForms('#consultation form');
+validateForms('#order form');
+
+$('input[name=phone]').mask("+7(999) 999-9999");
