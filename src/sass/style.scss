@@ -1,5 +1,9 @@
 @import 'base/variables';
 @import 'base/mixins';
+@import 'libs/animate';
+@import 'libs/fonts';
+@import 'libs/owl.carousel.min';
+@import 'libs/owl.theme.default.min';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -21,5 +25,7 @@
 @import 'blocks/_reviews';
 @import 'blocks/_footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
+@import 'blocks/iframe';
 
 @import 'base/media';

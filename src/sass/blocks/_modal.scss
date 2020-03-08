@@ -39,7 +39,7 @@
         }
         &__thanks  {
             width: 382px;
-            height: 142px;
+            min-height: 142px;
         }
         .error {
             border: 1px solid $main-color;
